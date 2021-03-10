@@ -1,5 +1,5 @@
 package GestordeFinancas.gestor;
 
-public class ContaPessoal {
-
+public class ContaPessoal extends Conta {
+	
 }
