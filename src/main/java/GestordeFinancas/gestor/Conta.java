@@ -11,5 +11,8 @@ public class Conta {
 		Conta.saldo = saldo;
 	}
 	
+	public static void retirada(double valor) {
+		setSaldo(saldo - valor);
+	}
 	
 }
