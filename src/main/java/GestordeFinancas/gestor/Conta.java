@@ -3,7 +3,14 @@ package GestordeFinancas.gestor;
 public class Conta {
 	private static double saldo;
 
-	public static double getSaldo() {
+	public static void getInfo(){
+            System.out.println("Digite o Usuário");
+            
+        
+        }
+        
+        
+        public static double getSaldo() {
 		return saldo;
 	}
 
@@ -12,7 +19,7 @@ public class Conta {
 	}
 	
 	public static void retirada(double valor) {
-		setSaldo(saldo - valor);
+		Conta.setSaldo(saldo - valor);
 	}
 	
 }
