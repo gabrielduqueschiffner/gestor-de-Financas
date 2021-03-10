@@ -8,10 +8,10 @@ public class Sistema {
 				+ "(1 - Nova Retirada) \n"
 				+ "(2 - Nova Transferência) \n "
 				+ "(3 - Novo Pagamento \n"
-				+ "(4 - Extrato \n"
-				+ "(5 - Saldo \n"
-				+ "(6 - Relatório Mensal \n"
-				+ "(7 - Fechar \n");
+				+ "(4 - Extrato) \n"
+				+ "(5 - Saldo) \n"
+				+ "(6 - Relatório Mensal) \n"
+				+ "(7 - Fechar) \n ");
 		int opc = ler.nextInt();
 		switch(opc) {
 			case(1):
