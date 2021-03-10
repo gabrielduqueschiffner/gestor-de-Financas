@@ -11,5 +11,12 @@ public class ContaCorrente extends Conta{
 		ContaCorrente.limite = limite;
 	}
 	
+	public static void transferencia(String nome, String conta, String valor) {
+		System.out.println("Transferencia Feita: \n" + "Beneficiario:" + nome + "Valor:" + valor);
+		double valor1 = Double.parseDouble(valor);
+		retirada(valor1);
+	}
+	
+	
 	
 }
