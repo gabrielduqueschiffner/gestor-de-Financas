@@ -6,5 +6,6 @@ public class Application {
         System.out.println("Gestor de Finaças");
         Sistema teste = new Sistema();
         teste.Menu();
+
     }
 }
