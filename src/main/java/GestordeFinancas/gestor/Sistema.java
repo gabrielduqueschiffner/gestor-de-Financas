@@ -4,105 +4,85 @@ import java.util.Scanner;
 
 public class Sistema {
 
-    public void Menu() {
-        Scanner ler = new Scanner(System.in);
-
-        System.out.println("Escolha uma das opções abaixo: \n,"
-                + "(1 - Nova Retirada) \n"
-                + "(2 - Nova Transferência) \n "
-                + "(3 - Novo Pagamento \n"
-                + "(4 - Extrato) \n"
-                + "(5 - Saldo) \n"
-                + "(6 - Relatório Mensal) \n"
-                + "(7 - Fechar) \n ");
-        int opc = ler.nextInt();
-        switch (opc) {
-            case (1):
-                retirada();
-                break;
-            case (2):
-                transferencia();
-                break;
-            case (3):
-                pagamento();
-                break;
-            case (4):
-                extrato();
-                break;
-            case (5):
-                saldo();
-                break;
-            case (6):
-                relatorio();
-                break;
-            case (7):
-                fechar();
-                break;
+    public void Menu(int opc) {
+        //botão 1 Pagamento
+        //botão 2 Saque & depósito
+        //botão 3 Extrato
+        //botão 4 Relatório
+        try {
+            switch (opc) {
+                case 1:
+                    //chamada para outra tela
+                    //
+                    break;
+    
+                case 2:
+    
+                    break;
+    
+                case 3:
+    
+                    break;
+    
+                case 4:
+    
+                    break;
+                default:
+                    break;
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
         }
-        ler.close();
-
     }
 
-    public void retirada() {
-        Scanner ler = new Scanner(System.in);
-        System.out.println("Escolha uma das opções abaixo: \n,"
-                + "(1 - Retirada em Conta Corrente) \n"
-                + "(2 - Retirada em conta Poupança) \n "
-                + "(3 - Retirada em caixa pessoal \n");
-        int opc = ler.nextInt();
-        System.out.println("Digite o valor da retirada: ");
-        Double valor = ler.nextDouble();
-        switch (opc) {
-            case (1):
-                GestordeFinancas.gestor.Conta.retirada(valor);
-                break;
-            case (2):
-                GestordeFinancas.gestor.ContaCorrente.retirada(valor);
-                break;
-            case (3):
-                GestordeFinancas.gestor.ContaPoupanca.retirada(valor);
-                break;
+    public void retirada(int opc,double valor) {  
+        try {
+            switch (opc) {
+                case (1):
+                    GestordeFinancas.gestor.Conta.retirada(valor);
+                    escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
+                    escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
+                    break;
+                case (2):
+                    GestordeFinancas.gestor.ContaCorrente.retirada(valor);
+                    escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
+                    escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
+                    break;
+                case (3):
+                    GestordeFinancas.gestor.ContaPoupanca.retirada(valor);
+                    escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
+                    escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
+                    break;
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
         }
-        ler.close();
+
     }
 
-    public void transferencia() {
-        Scanner ler = new Scanner(System.in);
-        String nome, conta, valor;
-        System.out.println("Nome: ");
-        nome = ler.nextLine();
-        System.out.println("Conta: ");
-        conta = ler.nextLine();
-        System.out.println("Valor: ");
-        valor = ler.nextLine();
-        GestordeFinancas.gestor.ContaCorrente.transferencia(nome, conta, valor);
-        ler.close();
+    public void transferencia(String nome, Double valor) {
+        escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
+        escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null);//alterar depois com o swing
     }
 
-    public void pagamento() {
-        Scanner ler = new Scanner(System.in);
+    public void pagamento(int opc) { 
+        // pagamento de boleto e transferencia
+      try {
+        if(opc == 1){
+        
+        }
+        if else (opc == 2){
 
-        ler.close();
+        }
+      } catch (Exception e) {
+          //TODO: handle exception
+      }
     }
 
     public void extrato() {
-
+        //lerArquivo(src\main\java\GestordeFinancas\arquivos\extrato)
     }
-
-    public void saldo() {
-        System.out.println("Conta Corrente");
-        GestordeFinancas.gestor.ContaCorrente.getSaldo();
-        System.out.println("Conta Poupanca");
-        GestordeFinancas.gestor.ContaPoupanca.getSaldo();
-        System.out.println("Conta Pessoal");
-        GestordeFinancas.gestor.ContaPessoal.getSaldo();
-    }
-
     public void relatorio() {
-
-    }
-
-    public void fechar() {
-
+        //lerArquivo(src\main\java\GestordeFinancas\arquivos\Relatorio)
     }
 }
