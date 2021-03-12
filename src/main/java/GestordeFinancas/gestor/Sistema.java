@@ -40,8 +40,8 @@ public class Sistema {
             switch (opc) {
                 case (1):
                     GestordeFinancas.gestor.Conta.retirada(valor);
-                    escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
-                    escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
+                    GestordeFinancas.arquivos.Arquivo.escrever(src.main.java.GestordeFinancas.arquivos.extrato,null); //alterar depois com o swing
+                    GestordeFinancas.arquivos.Arquivo.escrever(.\gestor-de-Financas\src\main\java\GestordeFinancas\arquivos\Relatorio,null);//alterar depois com o swing
                     break;
                 case (2):
                     GestordeFinancas.gestor.ContaCorrente.retirada(valor);

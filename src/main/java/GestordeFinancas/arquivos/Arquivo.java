@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GestordeFinancas.gestor;
+package GestordeFinancas.arquivos;
 
 import java.io.BufferedWriter;
 import java.io.File;
