@@ -1,6 +1,6 @@
 package GestordeFinancas.gestor;
 
-public class ContaPessoal extends Conta {
+public class ContaPessoal implements  Conta {
 
 	@Override
 	public String toString() {

@@ -1,6 +1,6 @@
 package GestordeFinancas.gestor;
 
-public class ContaCorrente extends Conta{
+public class ContaCorrente implements  Conta{
 	public static double limite;
 
 	public static double getLimite() {
@@ -15,6 +15,12 @@ public class ContaCorrente extends Conta{
 		System.out.println("Transferencia Feita: \n" + "Beneficiario:" + nome + "Valor:" + valor);
 		double valor1 = Double.parseDouble(valor);
 		retirada(valor1);
+	}
+
+	private static void retirada(double valor) {
+		// TODO Auto-generated method stub
+		Conta.setSaldo(saldo - valor);
+		
 	}
 	
 	

@@ -1,6 +1,6 @@
 package GestordeFinancas.gestor;
 
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca implements  Conta {
 
     public static void Rendimento() {
 
