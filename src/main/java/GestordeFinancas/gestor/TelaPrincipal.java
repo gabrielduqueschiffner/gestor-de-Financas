@@ -422,7 +422,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static String path = "C:\\Users\\Delage\\Documents\\NetBeansProjects\\GestorFinanceiro\\src\\main\\java\\com\\mycompany\\gestorfinanceiro\\usuarios";
+   
+    public static String path = "..\\gestor\\src\\main\\java\\GestordeFinancas\\usuarios";
+    
     public static String usuarioSelecionado;
 
     public static void main(String args[]) {
