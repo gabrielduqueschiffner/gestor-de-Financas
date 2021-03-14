@@ -39,19 +39,19 @@ public class Sistema {
         try {
             switch (opc) {
                 case (1):
-                    GestordeFinancas.gestor.Conta.retirada(valor);
-                    GestordeFinancas.arquivos.Arquivo.escrever(src.main.java.GestordeFinancas.arquivos.extrato,null); //alterar depois com o swing
-                    GestordeFinancas.arquivos.Arquivo.escrever(.\gestor-de-Financas\src\main\java\GestordeFinancas\arquivos\Relatorio,null);//alterar depois com o swing
+                    //GestordeFinancas.gestor.Conta.retirada(valor);
+                    //GestordeFinancas.arquivos.Arquivo.escrever(src.main.java.GestordeFinancas.arquivos.extrato,null); //alterar depois com o swing
+                    //GestordeFinancas.arquivos.Arquivo.escrever(.\gestor-de-Financas\src\main\java\GestordeFinancas\arquivos\Relatorio,null);//alterar depois com o swing
                     break;
                 case (2):
-                    GestordeFinancas.gestor.ContaCorrente.retirada(valor);
-                    escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
-                    escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
+                    //GestordeFinancas.gestor.ContaCorrente.retirada(valor);
+                    //escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
+                    //escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
                     break;
                 case (3):
-                    GestordeFinancas.gestor.ContaPoupanca.retirada(valor);
-                    escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
-                    escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
+                    //GestordeFinancas.gestor.ContaPoupanca.retirada(valor);
+                    //escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
+                    //escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null)//alterar depois com o swing
                     break;
             }
         } catch (Exception e) {
@@ -61,8 +61,8 @@ public class Sistema {
     }
 
     public void transferencia(String nome, Double valor) {
-        escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
-        escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null);//alterar depois com o swing
+        //escrever(src\main\java\GestordeFinancas\arquivos\extrato,null); //alterar depois com o swing
+        //escrever(src\main\java\GestordeFinancas\arquivos\Relatorio,null);//alterar depois com o swing
     }
 
     public void pagamento(int opc) { 
@@ -71,7 +71,7 @@ public class Sistema {
         if(opc == 1){
         
         }
-        if else (opc == 2){
+        else if (opc == 2){
 
         }
       } catch (Exception e) {
