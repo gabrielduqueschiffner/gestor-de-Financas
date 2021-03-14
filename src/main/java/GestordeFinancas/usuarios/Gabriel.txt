@@ -1,0 +1,3 @@
+50,1,agiotagem
+25,0,subornar guarda da esquina
+75,1,juros da agiotagem
