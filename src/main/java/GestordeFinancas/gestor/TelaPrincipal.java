@@ -424,7 +424,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
    
     public static String path = "..\\gestor\\src\\main\\java\\GestordeFinancas\\usuarios";
-    
     public static String usuarioSelecionado;
 
     public static void main(String args[]) {
