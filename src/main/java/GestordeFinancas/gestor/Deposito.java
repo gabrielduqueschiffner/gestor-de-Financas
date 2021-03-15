@@ -7,7 +7,7 @@ package GestordeFinancas.gestor;
 
 /**
  *
- * @author Delage
+ * @author Gabriel Duque
  */
 public class Deposito extends Transacao{
     

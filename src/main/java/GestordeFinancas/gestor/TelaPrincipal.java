@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Delage
+ * @author Adrian
  */
 public class TelaPrincipal extends javax.swing.JFrame {
 
@@ -357,6 +357,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void jComboBox1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox1MouseEntered
         jComboBox1.removeAllItems();
         java.io.File diretorio = new java.io.File(path);
+        System.out.println(diretorio.getAbsolutePath());
         String usuarios[] = diretorio.list();
         for (int i = 0; i < usuarios.length; i++) {
             jComboBox1.addItem(usuarios[i]);
@@ -423,7 +424,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
      * @param args the command line arguments
      */
    
-    public static String path = "..\\gestor\\src\\main\\java\\GestordeFinancas\\usuarios";
+    public static String path = "src\\main\\java\\GestordeFinancas\\usuarios";
     public static String usuarioSelecionado;
 
     public static void main(String args[]) {

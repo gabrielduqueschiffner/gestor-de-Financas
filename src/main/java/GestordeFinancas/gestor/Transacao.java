@@ -7,7 +7,7 @@ package GestordeFinancas.gestor;
 
 /**
  *
- * @author Delage
+ * @author Gabriel Duque
  */
 public abstract class Transacao {
     private float valor; 
